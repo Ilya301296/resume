@@ -268,6 +268,17 @@
     font-size: clamp(15.5px, 1.6vw, 17px);
     color: var(--text-muted); max-width: 640px; margin-bottom: 26px;
   }
+  .hero .target-role {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--text-soft);
+    padding: 4px 0;
+    margin-bottom: 24px;
+  }
+  .hero .target-role strong {
+    color: var(--text);
+    font-weight: 600;
+  }
   .hero-meta {
     display: flex; flex-wrap: wrap; gap: 8px 20px;
     color: var(--text-soft); font-size: 14px; margin-bottom: 28px;
@@ -306,6 +317,15 @@
     letter-spacing: -0.02em; margin: 0;
   }
   .section-sub { color: var(--text-muted); margin-top: 8px; max-width: 680px; }
+
+  .bio-text {
+    color: var(--text-muted);
+    max-width: 760px;
+    margin-bottom: 1em;
+  }
+  .bio-text.accent {
+    font-size: 1.05em;
+  }
 
   .highlights {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -686,6 +706,7 @@
           Практическая база — Linux/Windows Server, мониторинг, Docker, Kubernetes.
           Управленческая — декомпозиция задач, контроль сроков, процессы поддержки согласно ITIL.
         </p>
+        <div class="target-role">Открыт к роли: <strong>IT Project Manager · Service Delivery Manager · Team Lead</strong></div>
         <div class="hero-meta">
           <span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -733,33 +754,33 @@
         <h2 class="section-title">Инженер, который работает и руками, и головой</h2>
       </div>
 
-      <p style="color: var(--text-muted); max-width: 760px; font-size: 1.05em;">
+      <p class="bio-text accent">
         Мне одинаково комфортно тянуть кабель и описывать регламент.
         По моему опыту, второе без первого — теория, а первое без второго — ремесло.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Более 7 лет в ИТ — на всём протяжении совмещаю техническую работу с управленческой.
         На каждой позиции параллельно вёл два трека: настраивал инфраструктуру и координировал смены,
         разбирался в инцидентах и ставил задачи команде, работал с оборудованием и выстраивал
         взаимодействие между подразделениями.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Практическая база — администрирование Linux и Windows Server, настройка серверов и систем
         мониторинга, работа с Docker и Kubernetes. Управленческая — декомпозиция задач, контроль
         сроков, выстраивание процессов поддержки согласно ITIL. Умею и локализовать причину
         инцидента, и организовать работу так, чтобы инцидентов становилось меньше.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Отдельный навык — переводить техническую сложность на язык бизнеса: развил его через
         наставничество, обучение сотрудников и разработку внутренней документации. Опираюсь
         на практику: регламенты, база знаний, SLA, маршрутизация обращений. Не закрываю задачи
         поштучно — выстраиваю процессы, которые повышают эффективность команды.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Вектор — проектное управление и продукт. Прошёл профильную переподготовку по управлению
         ИТ-проектами и продуктами, осваиваю новые инструменты и сразу встраиваю их в работу.
         Способен здраво мыслить в условиях «пожара» — не теряю фокус и принимаю решения по существу.
@@ -786,12 +807,12 @@
             · Череповец · металлургия
           </div>
           <ul>
+            <li>Помогал в управлении командой инженеров из 3 человек: ставил задачи, контролировал SLA, вёл табели учёта времени</li>
             <li>Собирал требования с владельцев систем, настраивал дашборды Grafana для проактивного оповещения</li>
             <li>Разбирал инциденты и обращения через BPM-систему и Jira — от первичной диагностики до закрытия или эскалации</li>
             <li>Производил выкатку готовых обновлений и хот фиксов в Git и Kubernetes, с последующим мониторингом состояния систем и влияния изменений на продуктивную среду</li>
             <li>Согласовывал плановые работы и технологические окна с бизнес-подразделениями</li>
             <li>Вводил новые серверы и бизнес-приложения в контур наблюдения: настраивал триггеры доступности и производительности</li>
-            <li>Помогал в управлении командой инженеров из 3 человек: ставил задачи, контролировал SLA, вёл табели учёта времени</li>
             <li>Создавал базу знаний в Confluence: описывал типовые инциденты и регламенты</li>
             <li>Ставил задачи командам разработки, аналитики и DevOps на расследование инцидентов и изменение конфигураций</li>
           </ul>
@@ -1180,6 +1201,7 @@
           обучаю людей. Практическая база — Windows Server, Linux, сети TCP/IP, Docker, Kubernetes.
           Управленческая — Help Desk / Service Desk, SLA, маршрутизация тикетов, мониторинг.
         </p>
+        <div class="target-role">Открыт к роли: <strong>Team Lead · Service Delivery Manager · IT Project Manager</strong></div>
         <div class="hero-meta">
           <span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -1227,33 +1249,33 @@
         <h2 class="section-title">Инженер, который управляет и продолжает работать руками</h2>
       </div>
 
-      <p style="color: var(--text-muted); max-width: 760px; font-size: 1.05em;">
+      <p class="bio-text accent">
         Мне одинаково комфортно чинить сервер и выстраивать работу смены.
         По моему опыту, поддержка без понимания железа — это диспетчерская, а не инженерная служба.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Более 7 лет в ИТ — техническая работа идёт параллельно с управленческой. На каждой позиции
         совмещал обе роли: настраивал оборудование и серверы, и одновременно управлял сменами,
         ставил задачи, обучал людей, выстраивал процессы. Знаю работу поддержки изнутри —
         поэтому выстраиваю её системно, а не по инструкции сверху.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Практическая база — администрирование Windows Server и Linux, сети TCP/IP, Docker
         и Kubernetes. Управленческая — построение Help Desk / Service Desk: настройка SLA,
         маршрутизация тикетов и очередей в Jira, внедрение мониторинга для проактивного
         реагирования на инциденты.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Отдельный навык — объяснять сложное простым языком: обучаю команду, разрабатываю
         инструкции, провожу онбординг. Специализация — построение эффективных команд
         и оптимизация процессов поддержки в B2B/B2C-сегментах. Не закрываю инциденты поштучно,
         а выстраиваю систему: регламенты, база знаний, распределение нагрузки, развитие персонала.
       </p>
 
-      <p style="color: var(--text-muted); max-width: 760px;">
+      <p class="bio-text">
         Прошёл профильные курсы по Linux, управлению ИТ-проектами и продуктами.
         Способен здраво мыслить в условиях «пожара» — не теряю фокус и принимаю решения по существу.
       </p>
@@ -1333,12 +1355,11 @@
           </div>
           <ul>
             <li>Руководил дежурной группой быстрого реагирования: ставил задачи, распределял смены, вёл отчётность</li>
-            <li>Проводил собеседования кандидатов и обучение сотрудников работе с оборудованием</li>
-            <li>Разрабатывал инструкции по пользованию охранно-пожарной сигнализацией</li>
-            <li>Настраивал и поддерживал работоспособность серверов мониторинга охранно-пожарной сигнализации и IP-телефонии</li>
-            <li>Вводил в эксплуатацию технические средства охраны, контролировал регламентные работы</li>
-            <li>Работал с ГОСТ-документами: проверял на соответствие, заполнял согласно требованиям законодательства</li>
-            <li>Составлял акты и отчёты о проверке систем</li>
+            <li>Составлял графики дежурств и регламентных работ, проводил инструктажи личного состава</li>
+            <li>Проводил очное обучение сотрудников работе с оборудованием охранно-пожарной сигнализации, разрабатывал методические материалы</li>
+            <li>Вводил в эксплуатацию технические средства охраны: составлял план-графики монтажных работ, контролировал подрядчиков</li>
+            <li>Разрабатывал и актуализировал техническую документацию согласно требованиям ГОСТ</li>
+            <li>Готовил регулярную управленческую отчётность для вышестоящего руководства</li>
           </ul>
           <div class="stack">
             <span class="chip">Excel</span><span class="chip">Юпитер</span><span class="chip">Приток</span>
@@ -1545,7 +1566,7 @@
         </div>
 
         <div class="edu reveal">
-          <span class="edu-year">—</span>
+          <span class="edu-year">2025</span>
           <div class="edu-title">Администрирование Linux</div>
           <div class="edu-org">
             <a href="https://slurm.io/" target="_blank" rel="noopener" class="inline-link">Слёрм</a>
@@ -1722,7 +1743,8 @@
     }
   }
 
-  document.querySelectorAll('.copy-btn').forEach(function(btn) {
+  var copyBtns = document.querySelectorAll('.copy-btn');
+  copyBtns.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
@@ -1740,7 +1762,8 @@
     });
   });
 
-  document.querySelectorAll('.copy-link-btn').forEach(function(btn) {
+  var copyLinkBtns = document.querySelectorAll('.copy-link-btn');
+  copyLinkBtns.forEach(function(btn) {
     btn.addEventListener('click', function() {
       var name = btn.getAttribute('data-resume') || 'pm';
       var base = location.origin + location.pathname;
@@ -1772,6 +1795,7 @@
   var tabs = document.querySelectorAll('.segmented [data-tab]');
   var resumes = document.querySelectorAll('.resume[data-resume]');
   var navLinks = document.querySelectorAll('.nav a[data-target], .mobile-nav a[data-target]');
+  var navTargetLinks = document.querySelectorAll('.nav a[data-target]');
   var mobileNav = document.getElementById('mobileNav');
   var burger = document.getElementById('burger');
 
@@ -1844,7 +1868,7 @@
       if (s.offsetTop <= y) activeId = s.id;
     });
     var target = activeId ? activeId.split('-').pop() : '';
-    document.querySelectorAll('.nav a[data-target]').forEach(function(l) {
+    navTargetLinks.forEach(function(l) {
       l.classList.toggle('active', l.dataset.target === target);
     });
   }
